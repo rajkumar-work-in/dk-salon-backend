@@ -11,7 +11,7 @@ import java.util.List;
 @CrossOrigin(
         origins = "https://dksalon.vercel.app",
         allowedHeaders = "*",
-        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUt, RequestMethod.OPTIONS}
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT, RequestMethod.OPTIONS}
 )
 public class ContactController {
 
