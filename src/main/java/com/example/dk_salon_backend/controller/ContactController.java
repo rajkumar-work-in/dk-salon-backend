@@ -8,7 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/contact")
-@CrossOrigin(origins = "https://dksalon.vercel.app")
+@CrossOrigin(
+        origins = "https://dksalon.vercel.app",
+        allowedHeaders = "*",
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUt, RequestMethod.OPTIONS}
+)
 public class ContactController {
 
     private ContactService contactService;
